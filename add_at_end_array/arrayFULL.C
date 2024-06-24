@@ -1,8 +1,9 @@
-
-//array is full increasing size of array 
-//by creating another array with incresed size
-//and copying 1st array into 2nd
 //completed
+
+/*when array is full element is added by  
+by creating another array of  incresed size
+and copying 1st array into 2nd*/
+
 
 #include <stdio.h>
 
@@ -26,8 +27,9 @@ for(i=0;i<n;i++){
 int total_Elements=sizeof(a)/sizeof(a[0]);
 freepose=n;
 if (n==total_Elements){
+    //creating array b since array a is full
     int b[total_Elements+2];
-    //creating array b with inrease in size since array a is full
+
     freepose=add_at_end(a,b,n,freepose,67);
 
     printf("printing element\n");

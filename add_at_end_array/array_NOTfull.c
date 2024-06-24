@@ -47,6 +47,6 @@ in array a at position of freepose,which is empty position
 a[freepose],a[3]=data,67
 and freepose is increased,=4
 now array contain the elements 2,3,4,67,....,empty till a[99].
-now freepose=4 since its increased. and returned to the main function.
+now freepose=4 since its increased and returns to the main function.
 
 */

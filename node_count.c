@@ -1,5 +1,5 @@
 //completed
-// 1 traversing for counting each node  
+// traversing for counting each node  
 //time complexity O(n)
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,19 +11,20 @@ struct node{
 
 //since the head pointer is the type of struct node 
 int count_of_nodes(struct node *head);
+
 int main(){
     struct node *head;
- //opinter to the first node containing add of 1st node
+ //opinter to the first node containing address of 1st node
     head= (struct node*) malloc (sizeof(struct node*));
-//allocating memory zise of struct node* to store elements of node
+//allocating memory ziseof structnode* to store elements of structure node
     head->data=10;
     head->link=NULL;
 
-    struct node *current;
+    struct node *current;//creating second node
     current = (struct node*) malloc (sizeof(struct node*));
     current->data=30;
     current->link=NULL;
-    head->link=current;
+    head->link=current;//linking head to current 
 
     count_of_nodes(head);
 
@@ -46,5 +47,5 @@ struct node* link: A pointer to the next node in the list.
 
 Pointer: The pointer is used to dynamically allocate memory 
 for nodes and to link nodes together to form the list. 
-It allows for flexible memory usage and easy insertion/deletion of 
+It allows flexible memory usage and easy insertion/deletion of 
 nodes.*/

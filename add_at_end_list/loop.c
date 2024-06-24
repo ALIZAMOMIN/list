@@ -1,6 +1,6 @@
 
 //completed
-
+//time complexity O(n)
 #include <stdio.h>
 #include <stdlib.h>
 struct node{
@@ -31,7 +31,8 @@ int main(){
     head->link=NULL;
 /*Memory Allocation:
 
-When allocating memory for a struct node, you should use sizeof(struct node) instead of sizeof(struct node*).
+When allocating memory for a struct node,
+ use sizeof(struct node) instead of sizeof(struct node*).
 sizeof(struct node*) returns the size of a pointer, 
 not the size of the structure.*/
     struct node *current;
